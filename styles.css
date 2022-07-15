@@ -1,0 +1,59 @@
+@font-face {
+   font-family: 'Magic'; /* Si el nombre lleva espacios se encierra dentro de comillas dobles */
+   src: url("fonts/HarryPotter.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Magic', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #020024;
+    /*background: linear-gradient(0deg, rgba(2,0,36,0.5) 0%, rgba(9,9,121,0.5) 35%), url("./img/56989.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    font-size: 120px;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px #97bfff;
+}
+
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: #020024;
+    border-left: 2px solid #fff;
+    animation: appear 5s infinite alternate steps(15);
+}
+
+/**/
+@keyframes appear{
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
